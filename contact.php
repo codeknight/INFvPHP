@@ -10,7 +10,7 @@
   <meta name="description" content="">
 
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/dark.css">
+  <link rel="stylesheet" href="css/blue.css">
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
@@ -18,24 +18,24 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <header>
 
-    <div class="header-notice">
-      <div class="container">
+   <div class="header-notice">
+      <!-- <div class="container">
         <div class="sixteen columns">
-          <p><strong>THE INNOVATION FACTORY</strong></p>
+          <p><strong>THE INNOVATION FACTORY</strong> - Website is under devlopment</p>
         </div>
-      </div>
-    </div><!-- /header-notice -->
+      </div> -->
+    </div> <!-- /header-notice -->
 
     <div class="container">
       <div class="five columns">
-        <a href="index-2.html" id="logo">Powerful.</a>
+        <a href="index.php" id="logo">iNNOF</a>
       </div>
 
       <div class="eleven columns">
         <nav class="menu">
           <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="products.php">Products</a></li>
+            <!-- <li><a href="products.php">Products</a></li> -->
             <li><a href="services.php">Services</a>
             <li><a href="portfolio.php">Portfolio</a></li>
             <!-- <li><a href="blog.php">Blog</a></li> -->
@@ -78,9 +78,9 @@
               var contentString = '<div id="content">'+
                   '<div id="siteNotice">'+
                   '</div>'+
-                  '<h4 id="firstHeading" class="firstHeading">iNNOVATION FACTORY</h4>'+
+                  '<h4 id="firstHeading" class="firstHeading">INNOVATION FACTORY</h4>'+
                   '<div id="bodyContent">'+
-                  '<p>59, Sincil Bank, Lincoln, LN5 7TH</p>'+
+                  '<p>89, Park Lane, MIDDLESBROUGH, TS1 3LN</p>'+
                   '</div>'+
                   '</div>';
 
@@ -91,7 +91,7 @@
               var marker = new google.maps.Marker({
                   position: pixby,
                   map: map,
-                  title: 'Powerful.',
+                  title: 'iNNOF, The Innovation Factory',
                   zIndex: 99
               });
               google.maps.event.addListener(marker, 'click', function() {
@@ -108,35 +108,48 @@
             <h3>Address</h3>
 
             <p>
-              89 PARK LANE<br>
-              MIDDLESBROUGH<br>
-              UNITED KINGDOM<br><br>
-
               Email: <a href="#">info@innof.com</a><br>
               Skype: <a href="#">theinnof</a>
             </p>
 
             <h3>Social</h3>
             <p>
-              Twitter: <a href="http://twitter.com/theinnof">@theinnof</a><br>
-              Facebook: <a href="http://fb.me/theinnof">theinnof</a><br>
+              <i class="icon-twitter-sign icon-large"></i> Twitter: <a href="http://twitter.com/theinnof">@theinnof</a><br>
+              <i class="icon-facebook-sign icon-large"></i> Facebook: <a href="http://fb.me/theinnof">theinnof</a><br>
+              <i class="icon-linkedin-sign icon-large"></i> Linkedin: <a href="http://linkedin.com/company/innof">theinnof</a>
+              <!--<i class="icon-github-sign icon-large"></i>-->
             </p>
 
+            <h3>Location</h3>  
+            <p>
+              89 PARK LANE<br>
+              MIDDLESBROUGH<br>
+              UNITED KINGDOM
+            </p>  
+            <p>
+              900/B GREENVIEW, RD-1<br>
+              PANCHLAISH<br>
+              CHITTAGONG<br>
+              BANGLADESH
+            </p>
           </div>
 
           <div class="eleven columns alpha">
             <h1>Get in touch</h1>
             <p>Please write to us - feedback, queries or anything you want to. </p>
 
-            <form>
+            <form method="POST" action="send_msg.php">
               <label for="name">Name:</label>
-              <input type="text" id="name">
+              <input type="text" name="name" id="name">
 
               <label for="email">Email:</label>
               <input type="email" id="email">
 
+              <label for="subject">Subject:</label>
+              <input type="text" name="subject" id="subject">
+
               <label for="message">Message:</label>
-              <textarea id="message" rows="8"></textarea>
+              <textarea id="message" name="message" rows="8"></textarea>
 
 
               <p><br><input type="submit" class="button branded" value="Send message"></p>

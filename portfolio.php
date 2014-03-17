@@ -10,7 +10,7 @@
   <meta name="description" content="">
 
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/dark.css?v=1">
+  <link rel="stylesheet" href="css/blue.css?v=1">
 
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
@@ -19,11 +19,11 @@
   <header>
 
     <div class="header-notice">
-      <div class="container">
+      <!-- <div class="container">
         <div class="sixteen columns">
-          <p><strong>THE INNOVATION FACTORY</strong></p>
+          <p><strong>THE INNOVATION FACTORY</strong> - Website is under devlopment</p>
         </div>
-      </div>
+      </div> -->
     </div><!-- /header-notice -->
 
     <div class="container">
@@ -35,7 +35,7 @@
         <nav class="menu">
           <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="products.php">Products</a></li>
+            <!-- <li><a href="products.php">Products</a></li> -->
             <li><a href="services.php">Services</a>
             <li  class="current-menu-item"><a href="portfolio.php">Portfolio</a></li>
             <!-- <li><a href="blog.php">Blog</a></li> -->
@@ -176,9 +176,9 @@
             </div><!-- /portfolio-filter -->
 
             <div class="call-to-action">
-              <h4>Lorem ipsum dolor sit amet, consectetuer.</h4>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.</p>
-              <a href="#" class="button branded big">Contact us »</a>
+              <h4>Interested in any of our project?</h4>
+              <p>Please feel free to contact us. We will get back to in shortest time</p>
+              <a href="contact.php" class="button branded big">Contact us »</a>
             </div>
 
 
